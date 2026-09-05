@@ -15,6 +15,7 @@ jobs:
         run: |
           mkdir project
           unzip -q TatarLibrary_project.zip -d project
+          sed -i 's/9.1.2/9.1.1/g' project/build.gradle.kts
 
       - name: Set up Java
         uses: actions/setup-java@v4
